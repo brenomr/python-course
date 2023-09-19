@@ -1,9 +1,15 @@
 # USING WHILE/ELSE
+# Classes 039, 040, 041, 042
+
 """
 Annotations:
 The ELSE statement will be reached once WHILE finishes
 without a break, based on the condition passed to it
 """
+
+##############################
+# Iterating string with WHILE
+##############################
 
 # iterable_word = 'MarianaPeixoto'
 # new_word = '-'
@@ -19,7 +25,11 @@ without a break, based on the condition passed to it
 # else:
 #     print(f"WHILE statement finished, the new word is: {new_word}")
 
-# Exercise: Make a program using WHILE statement to show which letter
+##############################
+# Exercise
+##############################
+
+# Make a program using WHILE statement to show which letter
 # has the greatest amount on a given phrase
 
 phrase = 'O Python é uma linguagem de programação, '\
@@ -30,6 +40,7 @@ i = 0
 letter_repeated = []
 letter_list = []
 letter_count = 0
+phrase = phrase.replace(' ', '')
 
 try:
     while i < len(phrase):
