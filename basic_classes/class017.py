@@ -22,6 +22,10 @@ completar o boneco o usuário perde o jogo.
 _|___
 """
 
+#####################################
+# My own program, with extra content
+#####################################
+
 # vars to setting up the game
 secret_word = 'avocado'
 
@@ -90,3 +94,49 @@ if game_over:
     print("Don't worry, you can try again! ;)")
 else:
     print("Congratulations! You rock! =)")
+
+
+#########################################################
+# Creating the program originally requested in the course
+#########################################################
+
+"""
+secret_word = 'avocado'
+typed_letter = ''
+tries = 0
+result = ''
+
+try:
+    while True:
+        letter = input('Insert a letter: ')
+
+        if len(letter) > 1:
+            print('You need to insert one letter at time!')
+            continue
+
+        if letter in secret_word:
+            if letter not in typed_letter:
+                typed_letter += letter
+            else:
+                print('Letter already inserted.')
+                continue
+        else:
+            tries += 1
+        
+        for l in secret_word:
+            if l in typed_letter:
+                result += l
+            else:
+                result += '*'
+        
+        if result == secret_word:
+            break
+
+        print(f'Current word: {result}.')
+        result = ''
+    print(f'Congratulations, you found the secret word: {secret_word}.'\
+        f'It took {tries} tries.'
+    )       
+except Exception as err:
+    print(err)
+"""
