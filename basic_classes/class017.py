@@ -1,5 +1,6 @@
 # Exercise
 """
+Classes 047
 PT/BR: Desenvolver um jogo onde o usuário deverá adivinhar uma palavra (aka forca), regras:
 - O usuário poderá digitar uma letra por vez (validar);
 - A cada acerto a letra da palavra deverá ser exibida;
@@ -21,6 +22,8 @@ completar o boneco o usuário perde o jogo.
  |
 _|___
 """
+
+import os
 
 #####################################
 # My own program, with extra content
@@ -44,6 +47,7 @@ game_over = False
 while chances > 0:
     try:
         if secret_word == ''.join(secret_word_result):
+            os.system('clear')
             break
 
         print('\nSecret Word: ' + ''.join(secret_word_result), end='\n'*2)
@@ -74,6 +78,7 @@ while chances > 0:
                     print(f'Another hint to help you: {hint_2}.')
             else:
                 game_over = True
+                os.system('clear')
                 print('Game over!')
             print(' _______',\
                     ' |/     |',\
@@ -88,6 +93,7 @@ while chances > 0:
             )
     except Exception as err:
         print(err)
+
 
 print(f'\nThe secret word was: {secret_word}.')
 if game_over:
