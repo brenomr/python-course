@@ -8,7 +8,7 @@
 
 # Dealing with float imprecision using round
 
-import decimal
+import decimal, this
 
 num_a = 0.1
 num_b = 0.7
@@ -38,5 +38,8 @@ word_list = base_phrase.split(', ')
 #     print(phrase)
 #     print(word_list[index])
 
-print(word_list)
-print(' '.join(word_list))
+# print(word_list)
+# print(' '.join(word_list))
+
+# Showing the zen of pytho
+print(this)
