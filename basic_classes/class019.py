@@ -1,4 +1,4 @@
-# ROUND, SPLIT, JOIN, STRIP
+# ROUND, SPLIT, JOIN, STRIP, TERNARY
 # Classes 055, 056, 057
 
 
@@ -8,7 +8,10 @@
 
 # Dealing with float imprecision using round
 
-import decimal, this
+import decimal, os
+
+# Just need to import "this" in order to show Zen of Python
+# import this
 
 num_a = 0.1
 num_b = 0.7
@@ -41,5 +44,11 @@ word_list = base_phrase.split(', ')
 # print(word_list)
 # print(' '.join(word_list))
 
-# Showing the zen of pytho
-print(this)
+#########
+# TERNARY
+#########
+
+os.system('clear')
+cpf = input('Inser your CPF (just numbers): ')
+valid_cpf = len(cpf) == 11
+print(f'You have {"a valid" if valid_cpf else "an invalid"} cpf.')

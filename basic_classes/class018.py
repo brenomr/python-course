@@ -107,6 +107,8 @@ _, second_name, *_ = list_to_unpack
 
 # print(name4, unwanted_values, second_name)
 
+# Unpacking multiple values inside a method
+# print(*list_to_unpack)
 
 ######################
 # TUPLES
