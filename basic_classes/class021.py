@@ -1,4 +1,4 @@
-# RAMDOM
+# RANDOM
 # Class 064
 
 import random
