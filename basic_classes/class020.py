@@ -41,6 +41,10 @@ while True:
             print('\nCPF must have a maximum of 14 digits.\n')
             continue
         
+        if cpf[0] * len(cpf) == cpf:
+            print("\nCPF numbers can't be repeated.\n")
+            continue
+        
         for digit in cpf:
             if digit not in valid_digits:
                 valid_parsed_cpf = False
