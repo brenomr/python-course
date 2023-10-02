@@ -1,5 +1,3 @@
-# USING RANDOM()
-# Class 064
 # Exercise CPF GENERATOR
 
 import random

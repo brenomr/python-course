@@ -1,5 +1,5 @@
 # DICT with some methods
-# Classes 075, 076, 077, 078
+# Classes 075, 076 (pt-01), 077, 078
 # Like LIST, DICTIONARY is mutable
 
 person = {
@@ -46,35 +46,7 @@ person['car'] = 'Ford Focus'
 key_name = 'CPF'
 person[key_name] = '221.222.123-09'
 
+# delete attribute
 del person['car']
 
 # print(person)
-
-person2 = {
-    'name': 'Lorenzo',
-    'surname': 'Santos',
-    'age': 45,
-}
-
-# number of keys. Also could be print(person2.__len__())
-print(len(person2))
-
-# show the keys name
-print(person2.keys())
-
-# same as keys, but for values
-print(person2.values())
-
-# to return keys and values in tuples
-print(person2.items())
-
-# get keys and values in items
-# for key, value in person2.items():
-#     print(f'{key} -- {value}')
-
-# setdefult - add a key (attribute) if not exists
-person2.setdefault('nickname', 'Not defined...')
-
-print(person2['nickname'])
-
-person3 = person2.copy()
