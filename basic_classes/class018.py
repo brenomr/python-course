@@ -1,6 +1,8 @@
 # LIST, UNPACKING AND TUPLES
 # Classes 048, 049, 050, 051, 052, 053, 054
+
 """"
+Annotations:
 Empty list is always 
 Lists are mutable
 List are iterable
@@ -11,15 +13,9 @@ string01, string02 = "ABCDE", "FGHIJ"
 list_example01 = [string01, string02]
 list_example02 = []
 
-# print(f'TYPE: {type(list_example01)}\n'\
-#       f'LIST: {list_example01}\n'\
-#       f'BOOL EXAMPLE 02: {bool(list_example02)}'
-# )
-
 ####################
 # Methods and loops
 ####################
-
 
 for item in list_example01:
     list_example02.append(item)
@@ -81,11 +77,9 @@ for item in list_exercise:
 # print(list_exercise)
 
 # Professor suggestion
-
-index_p = range(len(list_exercise))
-
+# index_p = range(len(list_exercise))
 # for i in index_p:
-#     print(i, list_exercise[i][4:]) #[4:] to remove the first 4 characters added on line 78
+#     print(i, list_exercise[i][4:]) #[4:] to remove the first 4 characters
 
 
 ######################

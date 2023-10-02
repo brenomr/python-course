@@ -9,5 +9,10 @@ In order to execute any of the files, just do it by using the interactive mode:
 (e.g.): `python -i basic_classes/class017.py `
 
 ## :construction: (WIP) Tracking Exercises
+- Exercise of [Ordering Numbers](./basic_classes/class012.py)
+- [Multiple Exercises](./basic_classes/class014.py)
+- Exercise of [Letter Counter](./basic_classes/class015.py)
 - Exercise of [Hangman](./basic_classes/class017.py)
 - Exercise of [Shopping List](./basic_classes/class018.py)
+- Exercise of [CPF Validator](./basic_classes/class020.py)
+- Exercise of [CPF Generator](./basic_classes/class021.py)
