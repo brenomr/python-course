@@ -1,129 +1,55 @@
-# LIST, UNPACKING AND TUPLES
-# Classes 048, 049, 050, 051, 052, 053, 054
+# DEFINING AND USING FUNCIONS
+# Classes 065, 066, 067, 068, 069, 070
 
-""""
+"""
 Annotations:
-Empty list is always 
-Lists are mutable
-List are iterable
-When deleting, Python reindexes all items within a list, the greater the list more processing power will be necessary
+- Functions name must star with lower case
+- Functions can have parameters to receive arguments
 """
 
-string01, string02 = "ABCDE", "FGHIJ"
-list_example01 = [string01, string02]
-list_example02 = []
+def Prints():
+    print('A function who calls multiple methods... 1')
+    print('A function who calls multiple methods... 2')
 
-####################
-# Methods and loops
-####################
+def welcome(user_name=None):
+    print(f'Hello {user_name}, welcome!' if user_name else 'Welcome visitor!')
 
-for item in list_example01:
-    list_example02.append(item)
+# Prints()
+# welcome("Igor")
+# welcome()
 
-# Manual insert
-list_example02[0] = 'any value'
+# Functions with default value, named and positional arguments
+# Try to avoid  (0, ''), using None to validate "not defined" value
 
-# Deleting an value
-del list_example02[1]
+def soma(x, y, z=None):
+    if z is not None:
+        return f'{x=} + {y=} {z=} | x + y + z = {x + y + z}'
+    else:
+        return f'{x=} + {y=} | x + y = {x + y} | z not defined.'
 
-# Adding new value at the end of list
-list_example01.append('new value at the end of list')
+# Positional arguments
+# print(soma(10, 5, 25))
 
-# Remove the last item of a list if one index isn't informed
-removed_value = list_example01.pop(0)
-
-# Remove all items from a list
-list_example01.clear()
-
-# Adds a new value to the list based on a given index
-index = 0
-value = 'new value'
-
-list_example02.insert(index, value)
-
-# Extend a list
-list_03 = ['ABJJJ']
-list_03.extend(list_example02)
-# print(list_03)
-
-# In this example we don't have a copy of the list, we just
-# define 2 variables pointing to the same list, if we change
-# anything in list_a it will be reflected on list_b
-list_a = [1,2,3]
-list_b = list_a
-
-list_b.append('add something in list_b')
-# print(list_a)
-
-# In order to copy any object (list) we should use .copy()
-list_c = list_a.copy()
-list_c.append('add something in list_c')
-# print(list_a)
-
-####################
-# Exercise LIST
-####################
-# Using the basic methods already explained, try to show
-# the indexes of a list, without any list method.
-
-list_exercise = ['Manuela', 'Érika', 'Regina', 'Felipe']
-index = 0
-
-for item in list_exercise:
-    # print(f'{index} - {item}')
-    list_exercise[index] = f'{str(index).zfill(3)} {item}'
-    index += 1
-
-# print(list_exercise)
-
-# Professor suggestion
-# index_p = range(len(list_exercise))
-# for i in index_p:
-#     print(i, list_exercise[i][4:]) #[4:] to remove the first 4 characters
+# Named arguments
+# print(soma(y=10, x=5))
 
 
-######################
-# UNPACKING
-######################
+x = 1
+def scope():
 
-list_to_unpack = ['John', 'Alan', 'Richie']
+    # Changing external variable
+    global x
 
-# More variables than values or vice versa will lead to a ValueError exception
-name1, name2, name3 = list_to_unpack
+    x = 2
+    
+    def other_scope():
+        x = 3
+        y = 4
+        print(x, y)
+    
+    other_scope()
+    print(x)
 
-"""
-To avoid ValueError exception, we can keep all unwanted values using "*" before
-var name, by convention, store unnecessary data in "*_"
-The issue here is all unnecessary stored data
-"""
-name4, *unwanted_values = list_to_unpack
-_, second_name, *_ = list_to_unpack
-
-# print(name4, unwanted_values, second_name)
-
-# Unpacking multiple values inside a method
-# print(*list_to_unpack)
-
-######################
-# TUPLES
-######################
-#
-# Tuples are immutable, trying to change it will end in TypeError
-# e.g tuple_of_names[0] = 'New name...'
-
-tuple_of_names = ('Bob', 'Marley')
-
-tuple_from_list = tuple(list_to_unpack)
-# print(tuple_from_list)
-
-######################
-# ENUMERATE METHOD
-######################
-
-enumerated_list = enumerate(list_to_unpack)
-
-# Calling next option on enumerated_list
-#print(f'OUT OF THE FOR: {next(enumerated_list)}')
-
-# for i in enumerated_list:
-#     print(f'INSIDE FOR: {i}')
+print(x)
+scope()
+print(x)

@@ -1,46 +1,59 @@
-# USING INDEX, SLICE AND LEN()
-# Classes 027 and 028
+# TRY/EXCEPT BASIC USES, BUILT-IN TYPES AND LOOP WITH WHILE
+# https://docs.python.org/3/library/stdtypes.html
+# Classes 030, 031, 032 and 033, 034, 035, 036, 037, 038
 
-"""
-Annotations:
-Slicing string: [s:e:sp]
-s = start | e = end (limit) | sp = spaces (how many characters will be passed through, default == 1)
-Get by index: 'word'[0]
-"""
+########################
+# TRY/EXCEPT
+########################
 
-# text = 'hello world'
+# try:
+#     number = input('Enter a number: ')
+#     number = float(number)
 
-# Get by index
-# print(text[0])
+#     print(f'Your number multiplied by 2 is: {number*2}')
+# except Exception as err:
+#     print(err)
 
-# Get by index with range (slice)
-# print(text[1:5])
+########################
+# LOOP WITH WHILE
+########################
+# With the 'continue' declaration we can skip the rest of the 'while' on a specific loop
+# Some operators to use with 'while': +=, -=, *=, /=, //=, **= %=
 
-# Nothing == 0, same as text[0:5]
-# print(text[:5])
+# Regular count iterator
+count = 10
+while count >= 1:
+    count -= 2
+    
+    if count == 4:
+        print(f'Skip COUNT: {count}')
+        continue
 
-# From 0 to 10 (11 from len is the limit), 'jumping' 2 characters
-# print(text[0:len(text):2])
+    print(f'COUNT: {count}')
 
-# Reverse selection
-# print(text[::-1])
 
-# print(len(text))
+# Using multiple 'while's
 
-# Exercise
-# Ask for user name and age, check if both fields 
+qtt_lines = 4
+qtt_col = 3
+line = 1
 
-name = input('Insert your name: ')
-age = input('Insert your age: ')
+while line <= qtt_lines:
+    col = 1
+    print(f'LINE {str(line).zfill(2)}: ', end='')
 
-if name.strip() and age:
-    print(f"""
-            Your name is {name}.
-            Your inverted name is: {name[::-1]}.
-            Your name has{"" if " " in name else " no"} spaces.
-            Your name contains {len(name.replace(" ", ""))} letters without spaces.
-            The first letter of your name is {name.strip()[0]}.
-            The last letter of your entire name is {name[-1]}.
-    """)
-else:
-    print('You need to insert name and age.')
+    while col <= qtt_col:
+        print(f'COLUMN: {str(col).zfill(2)}', end=' | ')
+        col += 1
+    
+    print('')
+    line += 1
+
+# while True:
+#     text = input('Enter a text: ')
+#     print(f'Your text in uppercase: {text.upper()}')
+
+#     keep_running = input('Do you want to continue? [Y]es: ')
+
+#     if keep_running != 'Y' and keep_running != 'y':
+#         break

@@ -1,54 +1,43 @@
-# ROUND, SPLIT, JOIN, STRIP, TERNARY
-# Classes 055, 056, 057
+# FUNCTION PARAMETER OPTION *ARGS
+# Classes 071, 072, 073
 
+# In order to sent N arguments in a function, we can define paramater as:
 
-#######################
-# ROUND
-#######################
+def soma(*args):
+    acc = 0
 
-# Dealing with float imprecision using round
+    for number in args:
+        acc += number
+    
+    return acc
 
-import decimal, os
+results = soma(1, 2, 10, 5, 3)
+# print(results)
 
-# Just need to import "this" in order to show Zen of Python
-# import this
+"""
+Exercise:
+1) Make a function to multiply all arguments not named,
+return the result of the multiplication
+2) Make a function to return if a number is even or odd
+"""
 
-num_a = 0.1
-num_b = 0.7
-sum_numbs = num_a + num_b
+def calc(*args):
+    # To simplify, acc could be == 1
+    acc = 0
 
-num_c = decimal.Decimal('0.1')
-num_d = decimal.Decimal('0.7')
-sum_decs = num_c + num_d
+    for index, number in enumerate(args):
+        if index == 0:
+            acc = number
+        else:
+            acc *= number
+    
+    return acc
 
-# Expected 0.8, but will returns 0.7999999...
-# print(sum_numbs)
-# print(round(sum_numbs, 3))
-# print(sum_decs)
+def even_odd(number):
+    return f"The number {number} is: {'Even' if number % 2 == 0 else 'Odd'}"
 
-#######################
-# SPLIT JOIN STRIP
-#######################
+# Example of higher order function
+def welcome(message):
+    return message
 
-# strip to remove spaces from start and end of a string
-# lstrip remove space from left and rstrip from right
-
-base_phrase = 'Lets split strings, and then join everything...'
-word_list = base_phrase.split(', ')
-
-# getting index and phrase from a list
-# for index, phrase in enumerate(word_list):
-#     print(phrase)
-#     print(word_list[index])
-
-# print(word_list)
-# print(' '.join(word_list))
-
-#########
-# TERNARY
-#########
-
-os.system('clear')
-cpf = input('Inser your CPF (just numbers): ')
-valid_cpf = len(cpf) == 11
-print(f'You have {"a valid" if valid_cpf else "an invalid"} cpf.')
+print(welcome('Good morning...'))

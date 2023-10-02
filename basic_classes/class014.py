@@ -1,59 +1,26 @@
-# TRY/EXCEPT BASIC USES, BUILT-IN TYPES AND LOOP WITH WHILE
-# https://docs.python.org/3/library/stdtypes.html
-# Classes 030, 031, 032 and 033, 034, 035, 036, 037, 038
+# USING WHILE/ELSE
+# Classes 039, 040, 041, 042
 
-########################
-# TRY/EXCEPT
-########################
+"""
+Annotations:
+The ELSE statement will be reached once WHILE finishes
+without a break, based on the condition passed to it
+"""
 
-# try:
-#     number = input('Enter a number: ')
-#     number = float(number)
+##############################
+# Iterating string with WHILE
+##############################
 
-#     print(f'Your number multiplied by 2 is: {number*2}')
-# except Exception as err:
-#     print(err)
+# iterable_word = 'MarianaPeixoto'
+# new_word = '-'
+# i = 0
 
-########################
-# LOOP WITH WHILE
-########################
-# With the 'continue' declaration we can skip the rest of the 'while' on a specific loop
-# Some operators to use with 'while': +=, -=, *=, /=, //=, **= %=
-
-# Regular count iterator
-count = 10
-while count >= 1:
-    count -= 2
-    
-    if count == 4:
-        print(f'Skip COUNT: {count}')
-        continue
-
-    print(f'COUNT: {count}')
-
-
-# Using multiple 'while's
-
-qtt_lines = 4
-qtt_col = 3
-line = 1
-
-while line <= qtt_lines:
-    col = 1
-    print(f'LINE {str(line).zfill(2)}: ', end='')
-
-    while col <= qtt_col:
-        print(f'COLUMN: {str(col).zfill(2)}', end=' | ')
-        col += 1
-    
-    print('')
-    line += 1
-
-# while True:
-#     text = input('Enter a text: ')
-#     print(f'Your text in uppercase: {text.upper()}')
-
-#     keep_running = input('Do you want to continue? [Y]es: ')
-
-#     if keep_running != 'Y' and keep_running != 'y':
+# while i < len(iterable_word):
+#     if iterable_word[i] == ' ':
+#         print(f'Breaking WHILE. The new word before a space: {new_word}')
 #         break
+    
+#     new_word += f'{iterable_word[i]}-'
+#     i += 1
+# else:
+#     print(f"WHILE statement finished, the new word is: {new_word}")
