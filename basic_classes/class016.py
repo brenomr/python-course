@@ -1,5 +1,6 @@
 # LIST, UNPACKING AND TUPLES
-# Classes 048, 049, 050, 051, 052, 053, 054
+# UNPACKING DICT. ARGS AND KWARGS
+# Classes 048, 049, 050, 051, 052, 053, 054, 083
 
 """"
 Annotations:
@@ -127,3 +128,50 @@ enumerated_list = enumerate(list_to_unpack)
 
 # for i in enumerated_list:
 #     print(f'INSIDE FOR: {i}')
+
+########################
+# UNPACKING DICTIONARIES
+########################
+
+person = {
+    "name": "John",
+    "surname": "Doe",
+}
+
+details = {
+    'height': 1.76,
+    'weight': 78,
+}
+
+# Getting keys. Because with iterable (for) we catch on return the keys
+name, surname = person
+
+# Getting values
+name, surname = person.values()
+# print(name, surname)
+
+# Getting items() --> return tuples, we need to unpack it
+(kname, vname), (ksur, vsur) = person.items()
+
+# Getting values with iterable
+# for key, value in person.items():
+#     print(f'{key}: {value}', '\n------------')
+
+# Extracting multiples dictionaries, and adding new keys
+complete_person = {**person, **details, 'city': 'New York'}
+# print(complete_person)
+
+##############################
+# ARGS AND KWARGS in functions
+##############################
+
+# KWARGS, named arguments
+def show_words(*args, **kwargs):
+    print(f'Your positional args: {args}')
+    print(f'Your named kwargs: {kwargs}\n')
+
+    for key, value in kwargs.items():
+        print(f'{key}: {value}', '\n------------\n')
+
+# show_words(10, 12, 'lime', name="John", surname="Sullivan", age=25)
+show_words('positional argument 1', 2, **complete_person)
