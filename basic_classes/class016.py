@@ -1,6 +1,7 @@
 # LIST, UNPACKING AND TUPLES
 # UNPACKING DICT. ARGS AND KWARGS
-# Classes 048, 049, 050, 051, 052, 053, 054, 083
+# LIST COMPREHENSION
+# Classes 048, 049, 050, 051, 052, 053, 054, 083, 084
 
 """"
 Annotations:
@@ -170,8 +171,44 @@ def show_words(*args, **kwargs):
     print(f'Your positional args: {args}')
     print(f'Your named kwargs: {kwargs}\n')
 
-    for key, value in kwargs.items():
-        print(f'{key}: {value}', '\n------------\n')
+    # for key, value in kwargs.items():
+    #     print(f'{key}: {value}', '\n------------\n')
 
 # show_words(10, 12, 'lime', name="John", surname="Sullivan", age=25)
 show_words('positional argument 1', 2, **complete_person)
+
+
+
+####################
+# LIST COMPREHENSION
+####################
+
+# List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list
+
+# base insert data on list
+custom_list = []
+for number in range(10):
+    custom_list.append(number)
+
+# Creating a new list using list comprehension, based on another list, doubling its values
+new_list = [ number * 2 for number in custom_list ]
+
+# print(custom_list)
+# print(new_list)
+
+
+products = [
+    { 'name': 'Product 001', 'price': 105 },
+    { 'name': 'Product 002', 'price': 55 },
+    { 'name': 'Product 003', 'price': 92 },
+    { 'name': 'Product 004', 'price': 115 },
+]
+
+# creating a new list with dict, without change the first one
+new_products = [ 
+    {**product, 'price': round(product['price'] * 1.1, 2)}
+     if product['price'] > 100 else {**product} for product in products
+]
+
+print(*products, sep='\n')
+print(*new_products, sep='\n')
