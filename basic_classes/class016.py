@@ -51,7 +51,7 @@ list_03.extend(list_example02)
 # In this example we don't have a copy of the list, we just
 # define 2 variables pointing to the same list, if we change
 # anything in list_a it will be reflected on list_b
-list_a = [1,2,3]
+list_a = [1, 2, 3]
 list_b = list_a
 
 list_b.append('add something in list_b')
@@ -125,7 +125,7 @@ tuple_from_list = tuple(list_to_unpack)
 enumerated_list = enumerate(list_to_unpack)
 
 # Calling next option on enumerated_list
-#print(f'OUT OF THE FOR: {next(enumerated_list)}')
+# print(f'OUT OF THE FOR: {next(enumerated_list)}')
 
 # for i in enumerated_list:
 #     print(f'INSIDE FOR: {i}')
@@ -167,6 +167,8 @@ complete_person = {**person, **details, 'city': 'New York'}
 ##############################
 
 # KWARGS, named arguments
+
+
 def show_words(*args, **kwargs):
     print(f'Your positional args: {args}')
     print(f'Your named kwargs: {kwargs}\n')
@@ -174,9 +176,9 @@ def show_words(*args, **kwargs):
     # for key, value in kwargs.items():
     #     print(f'{key}: {value}', '\n------------\n')
 
+
 # show_words(10, 12, 'lime', name="John", surname="Sullivan", age=25)
 show_words('positional argument 1', 2, **complete_person)
-
 
 
 ####################
@@ -191,23 +193,23 @@ for number in range(10):
     custom_list.append(number)
 
 # Creating a new list using list comprehension, based on another list, doubling its values
-new_list = [ number * 2 for number in custom_list ]
+new_list = [number * 2 for number in custom_list]
 
 # print(custom_list)
 # print(new_list)
 
 
 products = [
-    { 'name': 'Product 001', 'price': 105 },
-    { 'name': 'Product 002', 'price': 55 },
-    { 'name': 'Product 003', 'price': 92 },
-    { 'name': 'Product 004', 'price': 115 },
+    {'name': 'Product 001', 'price': 105},
+    {'name': 'Product 002', 'price': 55},
+    {'name': 'Product 003', 'price': 92},
+    {'name': 'Product 004', 'price': 115},
 ]
 
 # creating a new list with dict, without change the first one
-new_products = [ 
+new_products = [
     {**product, 'price': round(product['price'] * 1.1, 2)}
-     if product['price'] > 100 else {**product} for product in products
+    if product['price'] > 100 else {**product} for product in products
 ]
 
 print(*products, sep='\n')
