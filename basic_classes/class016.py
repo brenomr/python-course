@@ -11,6 +11,8 @@ List are iterable
 When deleting, Python reindexes all items within a list, the greater the list more processing power will be necessary
 """
 
+import pprint
+
 string01, string02 = "ABCDE", "FGHIJ"
 list_example01 = [string01, string02]
 list_example02 = []
@@ -217,5 +219,5 @@ new_products = [
 evens_list = [ number for number in range(10) if number % 2 == 0 ]
 
 lower_price_products = [ product for product in products if product['price'] < 100 ]
-print(lower_price_products)
 
+pprint.pprint(lower_price_products)
