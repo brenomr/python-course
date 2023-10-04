@@ -1,4 +1,4 @@
-# SET() METHOD
+# SET() METHOD, and SET comprehension
 """
 Annotations:
 - set() is like list() and dict()
@@ -53,11 +53,15 @@ r7 = r1 ^ r2
 
 letters = set()
 
-while True:
-    letter = input('Insert a letter: ')
-    letters.add(letter.lower())
+# while True:
+#     letter = input('Insert a letter: ')
+#     letters.add(letter.lower())
 
-    if 'x' in letters:
-        print('Secret letter found.')
-        print(f'Typed letters: {letters}')
-        break
+#     if 'x' in letters:
+#         print('Secret letter found.')
+#         print(f'Typed letters: {letters}')
+#         break
+
+s1 = { number * 3 for number in range(5) }
+evens = { number for number in range(10) if number % 2 == 0 }
+print(s1, evens)

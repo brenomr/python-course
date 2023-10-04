@@ -220,4 +220,26 @@ evens_list = [ number for number in range(10) if number % 2 == 0 ]
 
 lower_price_products = [ product for product in products if product['price'] < 100 ]
 
-pprint.pprint(lower_price_products)
+# pprint.pprint(lower_price_products)
+
+
+#######################################
+# List comprehension with multiples FOR
+#######################################
+
+#Regular method, without list comprehension
+# list_for_for = []
+# for x in range(3):
+#     for y in range(3):
+#         list_for_for.append((x, y))
+
+# print(list_for_for)
+
+# With list comprehension
+list_for_for = [
+    (x, y)
+    for x in range(3)
+    for y in range(3)
+]
+
+print(list_for_for)

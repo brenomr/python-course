@@ -1,4 +1,4 @@
-# DICT more methods
+# DICT more methods, and DICT comprehension
 # Classes 076 (pt-02)
 
 import copy
@@ -55,3 +55,22 @@ person.update({ 'name': 'Marcelo', 'car': 'CPX-4454'})
 person.update(car='JBW-5555', surname='Alencar')
 name_to_update = ('name', 'Marcos'),
 person.update(name_to_update)
+
+# Mapping
+another_person = {
+    key: value.upper()
+    if isinstance(value, str) else value
+    for key, value
+    in person.items()
+}
+
+# Filter
+simples_person = {
+    key: value
+    for key, value
+    in another_person.items()
+    if key in ['name', 'surname']
+}
+
+print(another_person)
+print(simples_person)
