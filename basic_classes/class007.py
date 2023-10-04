@@ -1,5 +1,5 @@
 # VARS, PEP8
-# Using vars, some explanations about PEP8
+# Using vars, some explanations about PEP8 Style Guide --> https://peps.python.org/pep-0008/
 
 name = 'John Doe'
 age = 13 + 22
