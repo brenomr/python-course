@@ -1,6 +1,6 @@
 # LIST, UNPACKING AND TUPLES
 # UNPACKING DICT. ARGS AND KWARGS
-# LIST COMPREHENSION
+# LIST COMPREHENSION, MAPPING AND FILTERING LISTS
 # Classes 048, 049, 050, 051, 052, 053, 054, 083, 084
 
 """"
@@ -169,16 +169,15 @@ complete_person = {**person, **details, 'city': 'New York'}
 # KWARGS, named arguments
 
 
-def show_words(*args, **kwargs):
-    print(f'Your positional args: {args}')
-    print(f'Your named kwargs: {kwargs}\n')
+# def show_words(*args, **kwargs):
+# print(f'Your positional args: {args}')
+# print(f'Your named kwargs: {kwargs}\n')
 
-    # for key, value in kwargs.items():
-    #     print(f'{key}: {value}', '\n------------\n')
-
+# for key, value in kwargs.items():
+#     print(f'{key}: {value}', '\n------------\n')
 
 # show_words(10, 12, 'lime', name="John", surname="Sullivan", age=25)
-show_words('positional argument 1', 2, **complete_person)
+# show_words('positional argument 1', 2, **complete_person)
 
 
 ####################
@@ -198,7 +197,6 @@ new_list = [number * 2 for number in custom_list]
 # print(custom_list)
 # print(new_list)
 
-
 products = [
     {'name': 'Product 001', 'price': 105},
     {'name': 'Product 002', 'price': 55},
@@ -212,5 +210,12 @@ new_products = [
     if product['price'] > 100 else {**product} for product in products
 ]
 
-print(*products, sep='\n')
-print(*new_products, sep='\n')
+# Filtering data before create new list
+# Elements before FOR are mappings, and after are filters, e.g:
+# new_list = [ MAPPINGS for n in range(10) ]
+# new_list = [ n for n in range(10) FILTERS ]
+evens_list = [ number for number in range(10) if number % 2 == 0 ]
+
+lower_price_products = [ product for product in products if product['price'] < 100 ]
+print(lower_price_products)
+
