@@ -47,6 +47,10 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 025](./basic_classes/class025.py).
 - Iterable, iterator and generator
     [Class 026](./basic_classes/class026.py).
+- Uses of Try, Except and Finally
+    [Class 027](./basic_classes/class027.py).
+- Using Modules (import, from, as, and *)
+    [Class 028](./basic_classes/class028.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
