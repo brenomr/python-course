@@ -4,7 +4,7 @@ Understanding your own MODULE
 Annotations:
 - The first module know by Python will be always: __main__
 - You can import the entire module or some parts (like class028 with os and sys)
-- The Python Know the folder where the __main__ is and the folders below it.
+- The Python Know the folder where the __main__.
 - Python doesn't know modules on parent folders (above folder where __main__ is)
 - Python know all modules and packages on sys.path
 """
