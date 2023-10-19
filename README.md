@@ -51,6 +51,14 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 027](./basic_classes/class027.py).
 - Using Modules (import, from, as, and *)
     [Class 028](./basic_classes/class028.py).
+- Using your own Modules
+    [Class 029](./basic_classes/class029.py).
+- More about Modules (reloading a module)
+    [Class 030](./basic_classes/class030.py).
+- Using Packages
+    [Class 031](./basic_classes/class031.py).
+- Initializing a Package
+    [Class 032](./basic_classes/class032.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)

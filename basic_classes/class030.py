@@ -1,5 +1,5 @@
 """
-Mode about MODULE (reloading a module)
+More about MODULE (reloading a module)
 
 Annotations:
 - Modules are singleton, there is just one instance of them on the entire program

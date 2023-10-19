@@ -5,5 +5,4 @@ Initializing a PACKAGE
 
 import class031_package
 
-
 class031_package.say_hello()
