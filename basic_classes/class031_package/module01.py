@@ -20,9 +20,7 @@ from class031_package.module02 import say_hello
 # exposed on imports like: from module01 import *
 __all__ = [ 'name', 'personal_sum' ]
 
-print(f'Module: {__name__}')
-
-say_hello()
+print(f'Using: {__name__}')
 
 name = 'John Doe'
 
