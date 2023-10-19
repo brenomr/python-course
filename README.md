@@ -69,3 +69,4 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Exercise of [CPF Generator](./basic_classes/exercise007.py)
 - Exercise of [Numbers Quiz](./basic_classes/exercise008.py)
 - Exercise of [Duplicated Number](./basic_classes/exercise009.py)
+- Exercise of [Manipulating Lists](./basic_classes/exercise010.py)
