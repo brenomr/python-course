@@ -70,3 +70,7 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Exercise of [Numbers Quiz](./basic_classes/exercise008.py)
 - Exercise of [Duplicated Number](./basic_classes/exercise009.py)
 - Exercise of [Manipulating Lists](./basic_classes/exercise010.py)
+## Extra
+Some tests out of the class:
+- Sum of numbers in a string
+    [Extra 001](./basic_classes/extra001.py).
