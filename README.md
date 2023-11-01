@@ -61,6 +61,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 032](./basic_classes/class032.py).
 - Global, local and nonlocal variables
     [Class 033](./basic_classes/class033.py).
+- Decorating Functions
+    [Class 034](./basic_classes/class034.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
