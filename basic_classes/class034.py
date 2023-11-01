@@ -1,7 +1,7 @@
 """
-Decorating Functions
+Decorators
 
-This example shows the most complex way to create a 'decorator' with a function.
+This example shows how to create a decorator function.
 """
 
 from os import system
@@ -19,7 +19,7 @@ def is_string(string=None):
 
 def generate_inverter(function):
     """
-    A simple 'decorator' function to generate another
+    A simple decorator function to generate another
     function to validate a string type before inverting it.
     """
 
@@ -32,6 +32,15 @@ def generate_inverter(function):
 
     return validate_and_invert_string
 
+# This is te most complex way to decorate the function string_inverter
 string_to_inverter = generate_inverter(string_inverter)
-
 print(string_to_inverter('John Doe'))
+
+# This is the simple and best way to decorate a function
+
+@generate_inverter
+def string_inverter_two(string: str):
+    """A simple decorated function to invert a string."""
+    return string[::-1]
+
+print(string_inverter_two('Robinson Crusoe'))
