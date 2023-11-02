@@ -1,5 +1,5 @@
 """
-Decorators
+Decorators - part I
 
 This example shows how to create a decorator function.
 """
