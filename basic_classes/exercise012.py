@@ -35,3 +35,14 @@ def merge_lists(city_list: list, acronym_list: list):
 merged = merge_lists(cities, acronym)
 
 print(merged)
+
+# Built in method, with the same result
+from itertools import zip_longest
+
+result = zip(cities, acronym)
+
+# zip longest uses the large list
+result2 = zip_longest(cities, acronym)
+
+print(list(result))
+print(list(result2))
