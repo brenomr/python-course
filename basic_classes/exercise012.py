@@ -16,18 +16,22 @@ def merge_lists(city_list: list, acronym_list: list):
     """Merge two lists based on the short one."""
 
     if len(city_list) < len(acronym_list):
-        shortest_list = city_list
+        limit = len(city_list)
     else:
-        shortest_list = acronym_list
+        limit = len(acronym_list)
 
     # long solution
     # merged = []
     # for index, item in enumerate(shortest_list):
     #     merged.append((city_list[index], acronym_list[index]))
 
+    # course's proposal
+    # max_interval = min(len(city_list), len(acronym_list))
+    # return [ (city_list[i], acronym_list[i]) for i in range(max_interval)]
+
     # short solution
-    merged = [ (city_list[index], acronym_list[index]) for index, item in enumerate(shortest_list) ]
+    return [ (city_list[index], acronym_list[index]) for index in range(limit) ]
 
-    print(merged)
+merged = merge_lists(cities, acronym)
 
-merge_lists(cities, acronym)
+print(merged)
