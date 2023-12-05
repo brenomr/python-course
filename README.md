@@ -81,7 +81,8 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Exercise of [Duplicated Number](./basic_classes/exercise009.py)
 - Exercise of [Manipulating Lists](./basic_classes/exercise010.py)
 - Exercise of [Closure](./basic_classes/exercise011.py)
-- Exercise of [Merging List](./basic_classes/exercise012.py)
+- Exercise of [Merging Lists](./basic_classes/exercise012.py)
+- Exercise of [Sum of Two Lists](./basic_classes/exercise013.py)
 ## Extra
 Some tests out of the class:
 - Sum of numbers in a string
