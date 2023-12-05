@@ -64,7 +64,11 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Decorators - Part I - Decorator function
     [Class 034](./basic_classes/class034.py).
 - Decorators - Part II - Inner (or nested) functions
-    [Class 034](./basic_classes/class034.py).
+    [Class 035](./basic_classes/class035.py).
+- Decorators - Recapitulation
+    [Class 035](./basic_classes/class035_recap.py).
+- Decorators - Ordering
+    [Class 036](./basic_classes/class036.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
@@ -77,6 +81,7 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Exercise of [Duplicated Number](./basic_classes/exercise009.py)
 - Exercise of [Manipulating Lists](./basic_classes/exercise010.py)
 - Exercise of [Closure](./basic_classes/exercise011.py)
+- Exercise of [Merging List](./basic_classes/exercise012.py)
 ## Extra
 Some tests out of the class:
 - Sum of numbers in a string
