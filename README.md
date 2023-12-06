@@ -69,6 +69,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 035](./basic_classes/class035_recap.py).
 - Decorators - Ordering
     [Class 036](./basic_classes/class036.py).
+- Uses of Count
+    [Class 037](./basic_classes/class037.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
@@ -87,3 +89,5 @@ In order to execute any of the files, just do it by using the interactive mode:
 Some tests out of the class:
 - Sum of numbers in a string
     [Extra 001](./basic_classes/extra001.py).
+- Counting letters in a word
+    [Extra 002](./basic_classes/extra002.py).
