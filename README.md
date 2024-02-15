@@ -73,6 +73,7 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 037](./basic_classes/class037.py).
     [Class 038](./basic_classes/class038.py).
     [Class 039](./basic_classes/class039.py).
+- Uses of Partial, Map, Filter and Reduce
     [Class 040](./basic_classes/class040.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)

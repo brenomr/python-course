@@ -1,8 +1,8 @@
 """
-Uses of partial from functools and map
+Uses of partial, map, filter and reduce
 """
 
-from functools import partial
+from functools import partial, reduce
 
 def print_iter(iterable):
     print(*iterable, sep='\n')
@@ -26,6 +26,7 @@ discount_products_10 = [
     {**product, 'price': discount(product['price'], 10)} for product in products
 ]
 
+print('Discount products from complex example')
 print_iter(discount_products_10)
 
 ###########################################################
@@ -39,6 +40,7 @@ discount_products_20 = [
 ]
 
 print('\n------------------------------\n')
+print('Discount products from partial example')
 print_iter(discount_products_20)
 
 ###########################################################
@@ -54,7 +56,7 @@ discount_products_50 = map(
 )
 
 print('\n------------------------------\n')
-
+print('Discount products from map example')
 print_iter(discount_products_50)
 
 ###########################################################
@@ -69,4 +71,51 @@ new_values = map(
 )
 
 print('\n------------------------------\n')
-print_iter(new_values)
+print('New values from lambda example')
+print(*new_values)
+
+###########################################################
+# Using filter
+###########################################################
+
+# Without filter (price > 50)
+products_price_greater_than_50 = [
+    { **product } for product in products
+    if product['price'] > 50
+]
+
+print('\n------------------------------\n')
+print('Products price greater than 50 from simple list comprehension')
+print_iter(products_price_greater_than_50)
+
+# With filter
+new_products = filter(
+    lambda product: product['price'] > 50,
+    products
+)
+print('\n------------------------------\n')
+print('Products price greater than 50 from filter')
+print_iter(new_products)
+
+###########################################################
+# Using reduce
+###########################################################
+
+# Without reduce
+total_without_reduce = 0
+for product in products:
+    total_without_reduce += product['price']
+
+def reducing(acc, product):
+    acc += product['price']
+    return acc
+
+total_with_reduce = reduce(
+    reducing,
+    products,
+    0
+)
+
+print('\n------------------------------\n')
+print('Total using reduce')
+print(f'without reduce: {total_without_reduce} || with reduce: {total_with_reduce}')
