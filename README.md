@@ -75,6 +75,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 039](./basic_classes/class039.py).
 - Uses of Partial, Map, Filter and Reduce
     [Class 040](./basic_classes/class040.py).
+- Recursive functions
+    [Class 041](./basic_classes/class041.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
