@@ -20,7 +20,10 @@ for letter in letters:
     if letters.get(letter) > stored_letter['count']:
         stored_letter = { 'letter': letter, 'count': letters.get(letter) }
 
-print(f'The letter ({stored_letter.get("letter")}) repeats ({stored_letter.get("count")}) times.')
+print(f'The letter that is repeated most often is ({stored_letter.get("letter")}), it repeats ({stored_letter.get("count")}) times.')
+print(f'The rank of all letters in general is: {letters}.')
+
+# Obs. Theres an issue where if two letters are repeated the same amount of times, the last one will be printed.
 
 # -----------------------------------
 # Same solution, a little bit verbose
