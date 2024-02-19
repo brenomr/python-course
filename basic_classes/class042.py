@@ -38,9 +38,8 @@ os.rename (to rename a file)
 
 import os
 
-path = '/home/rodrigues/Documents/Projects/python-course/basic_classes/data'
-file_name = 'class042.txt'
-file_path = f'{path}/{file_name}'
+path = os.path.dirname(os.path.realpath(__file__))
+file_path = f'{path}/data/class042.txt'
 
 # to write a file
 # file = open(file_path, 'w')
@@ -92,4 +91,4 @@ with open(file_path, 'r') as file:
 # os.unlink(file_path)
 
 # to rename a file
-os.rename(file_path, f'{path}/class042_renamed.txt')
+os.rename(file_path, f'{path}/data/class042_renamed.txt')
