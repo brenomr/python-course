@@ -10,6 +10,9 @@ import os
 import sys
 import json
 
+this_file_path = os.path.dirname(os.path.realpath(__file__))
+FILE_PATH = file_path = f'{this_file_path}/data/task_list.json'
+
 def clear():
     os.system("clear")
 
@@ -35,34 +38,31 @@ def exit_app():
     clear()
     sys.exit()
 
-def save_tasks(task_list: list):
+def save_tasks(task_list: list, try_to_open: bool = False):
     clear()
 
-    if len(task_list) == 0:
-        print('Task list empty, nothing was saved!', end='\n'*2)
-        return
-
-    this_file_path = os.path.dirname(os.path.realpath(__file__))
-    file_path = f'{this_file_path}/data/task_list.json'
-    
-    with open(file_path, 'w', encoding='utf8') as file:
+    with open(FILE_PATH, 'w', encoding='utf8') as file:
         json.dump(task_list, file, indent=2, ensure_ascii=False)
+
+    if try_to_open:
+        print(f'A new file was opened.', end='\n'*2)
+    else:
         print(f'File saved at: {file_path}.', end='\n'*2)
 
 def open_task_list(task_list: list, cache_list: list):
     clear()
 
-    if len(task_list) > 0:
-        print('You already have a list, try removing all items before opening an existing list!', end='\n'*2)
-        return
-    
     cache_list.clear()
+    task_list.clear()
 
-    this_file_path = os.path.dirname(os.path.realpath(__file__))
-    file_path = f'{this_file_path}/data/task_list.json'
-    
-    with open(file_path, 'r', encoding='utf8') as file:
-        task_list.extend(json.load(file))
+    try:
+        with open(FILE_PATH, 'r', encoding='utf8') as file:
+            task_list.extend(json.load(file))
+    except Exception as e:
+        if isinstance(e, FileNotFoundError):
+            save_tasks(task_list, True)
+        else:
+            print(e)
 
 welcome_message = "Welcome to Task List V0.0.1!\n\nType one of the commands or start\ntyping your task to create a list\n"
 
