@@ -83,6 +83,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 043](./basic_classes/class043.py).
 - The problem of mutable params on Python functions
     [Class 044](./basic_classes/class044.py).
+- Positional only arguments
+    [Class 045](./basic_classes/class045.py).
 ## :construction: (WIP) Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
