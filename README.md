@@ -8,7 +8,7 @@ In order to execute any of the files, just do it by using the interactive mode:
 - `python -i any_path_here/desired_script.py` <br>
 (e.g.): `python -i basic_classes/class017.py `
 
-## Content of Classes
+## Content of Basic Classes
 - Print Method (print()), data types and some operators:
     [Class 001](./basic_classes/class001.py) -
     [Class 002](./basic_classes/class002.py) -
@@ -85,7 +85,12 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 044](./basic_classes/class044.py).
 - Positional only arguments
     [Class 045](./basic_classes/class045.py).
-## :construction: (WIP) Tracking Exercises
+
+## Content of POO Classes:
+- Working with classes
+    [Class 001](./poo_classes/class001.py).
+
+## Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
 - Exercise of [Letter Counter](./basic_classes/exercise003.py)
@@ -100,6 +105,7 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Exercise of [Merging Lists](./basic_classes/exercise012.py)
 - Exercise of [Sum of Two Lists](./basic_classes/exercise013.py)
 - Exercise of [Task List](./basic_classes/exercise014.py)
+
 ## Extra
 Some tests out of the class:
 - Sum of numbers in a string
