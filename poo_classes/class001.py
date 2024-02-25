@@ -6,6 +6,7 @@ By convention we use PascalCase to name classes, e.g: MyCustomClass
 We can do many actions throuth class methods
 param 'self' always refers to the own class instance
 Methods are functions inside a class
+More detail of 'self' after line 66
 """
 
 ####################
@@ -33,8 +34,14 @@ class Car:
     def __str__(self) -> str:
         return self.name
     
-    def show_color(self):
-        print(f'{self.name} are {self.color}!')
+    def show_color(self, new_color=None):
+        print(f'{self.name} is {new_color if new_color else self.color}!')
+    
+    def speed_up(self, speed):
+        print(f'The {self.name} is speeding up at {speed}km')
+    
+    def what_the_color(self, *args, **kwargs):
+        return self.show_color(*args, **kwargs)
 
 fusca = Car('Fusca', 'Amarelo', 'Antigo')
 uno = Car(name='Uno', color='Grey', model='Fire')
@@ -60,3 +67,16 @@ print(uno)
 # Calling a method
 ##################
 fusca.show_color()
+
+##################
+# Behavior of self
+##################
+
+etios = Car('Etios', 'Silver', 'Flex')
+
+etios.speed_up(50)
+etios.what_the_color('Blue')
+
+# By calling etios.show_color is the same as invoking
+# the class and send to it the instance of etios
+Car.show_color(etios)
