@@ -89,6 +89,10 @@ In order to execute any of the files, just do it by using the interactive mode:
 ## Content of POO Classes:
 - Working with classes
     [Class 001](./poo_classes/class001.py).
+- States of a class
+    [Class 002](./poo_classes/class002.py).
+- Define class attribute and making uses of \__dict__ and vars
+    [Class 003](./poo_classes/class003.py).    
 
 ## Tracking Exercises
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
