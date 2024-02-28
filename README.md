@@ -92,7 +92,10 @@ In order to execute any of the files, just do it by using the interactive mode:
 - States of a class
     [Class 002](./poo_classes/class002.py).
 - Define class attribute and making uses of \__dict__ and vars
-    [Class 003](./poo_classes/class003.py).    
+    [Class 003](./poo_classes/class003.py).
+- Using classmethod and staticmethod
+    [Class 004](./poo_classes/class004.py).
+    [Class 005](./poo_classes/class005.py).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
@@ -120,4 +123,4 @@ Some tests out of the class:
 - Counting letters in a word
     [Extra 002](./basic_classes/extra002.py).
 - Checking camelCase in this project
-    [Extra 003](./basic_classes/extra003.py).
+    [Extra 003](./basic_classes/extra00.py).
