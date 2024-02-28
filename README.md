@@ -119,3 +119,5 @@ Some tests out of the class:
     [Extra 001](./basic_classes/extra001.py).
 - Counting letters in a word
     [Extra 002](./basic_classes/extra002.py).
+- Checking camelCase in this project
+    [Extra 003](./basic_classes/extra003.py).
