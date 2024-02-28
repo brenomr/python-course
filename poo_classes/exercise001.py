@@ -45,11 +45,29 @@ class Person:
                 self.save_person_file()
             else:
                 print(e)
+    
+    def __str__(self) -> str:
+        return self.name
 
-
-fernando = Person(name='Fernando', last_name='Amaral', age=25, address='Boulevart Street, 25')
-fernando.save_person_file()
+Fernando = Person(name='Fernando', last_name='Amaral', age=25, address='Boulevart Street, 25')
+# Fernando.save_person_file()
 # fernando.open_person_file()
 
 Adalberto = Person(name='Adalberto', last_name='Antunes', age=34, address='Boulevart Street, 475')
 # Adalberto.save_person()
+
+Adriana = Person('Adriana', 'Souza', 29, 'Ammy Street, 1235')
+
+people_list = [Fernando.__dict__, Adalberto.__dict__, vars(Adriana)]
+
+def create_people_json(list, fp):
+
+    file_path = f'{fp}/data/people_list.json'
+
+    with open(file_path, 'w', encoding='utf8') as file:
+        file_to_save = json.dump(obj=people_list, fp=file, ensure_ascii=False, indent=2)
+    print('People List saved...')
+
+if __name__ == '__main__':
+    create_people_json(list=people_list, fp=current_path)
+    print('Modulo: ', __name__)

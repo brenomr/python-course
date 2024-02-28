@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Fernando",
+    "last_name": "Amaral",
+    "age": "25",
+    "address": "Boulevart Street, 25"
+  },
+  {
+    "name": "Adalberto",
+    "last_name": "Antunes",
+    "age": "34",
+    "address": "Boulevart Street, 475"
+  },
+  {
+    "name": "Adriana",
+    "last_name": "Souza",
+    "age": "29",
+    "address": "Ammy Street, 1235"
+  }
+]
