@@ -5,7 +5,6 @@ Save each class in a new JSON file
 """
 import os
 import json
-import sys
 
 current_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -26,7 +25,7 @@ class Person:
 
         try:
             with open(path, 'w', encoding='utf8') as file:
-                data_to_save = json.dump(obj=data_to_save, fp=file, indent=2, ensure_ascii=False)
+                json.dump(obj=data_to_save, fp=file, indent=2, ensure_ascii=False)
             print(f'The file was saved at: {path}')
         except Exception as e:
             if isinstance(e, FileNotFoundError) and self.dir_not_created:
@@ -50,24 +49,21 @@ class Person:
         return self.name
 
 Fernando = Person(name='Fernando', last_name='Amaral', age=25, address='Boulevart Street, 25')
+Adalberto = Person(name='Adalberto', last_name='Antunes', age=34, address='Boulevart Street, 475')
+Adriana = Person(name='Adriana', last_name='Souza', age=29, address='Ammy Street, 1235')
+
 # Fernando.save_person_file()
 # fernando.open_person_file()
 
-Adalberto = Person(name='Adalberto', last_name='Antunes', age=34, address='Boulevart Street, 475')
-# Adalberto.save_person()
+pl = [Fernando.__dict__, Adalberto.__dict__, vars(Adriana)]
 
-Adriana = Person('Adriana', 'Souza', 29, 'Ammy Street, 1235')
+def create_people_json(people_list, file_path):
 
-people_list = [Fernando.__dict__, Adalberto.__dict__, vars(Adriana)]
+    fp = f'{file_path}/data/people_list.json'
 
-def create_people_json(list, fp):
-
-    file_path = f'{fp}/data/people_list.json'
-
-    with open(file_path, 'w', encoding='utf8') as file:
-        file_to_save = json.dump(obj=people_list, fp=file, ensure_ascii=False, indent=2)
-    print('People List saved...')
+    with open(fp, 'w', encoding='utf8') as file:
+        json.dump(obj=people_list, fp=file, ensure_ascii=False, indent=2)
+    print(f'People list saved at: {fp}')
 
 if __name__ == '__main__':
-    create_people_json(list=people_list, fp=current_path)
-    print('Modulo: ', __name__)
+    create_people_json(people_list=pl, file_path=current_path)

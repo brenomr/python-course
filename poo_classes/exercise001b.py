@@ -12,6 +12,5 @@ def convert_list_to_person_class(person):
         for person in people_class_list:
             print(person.__dict__)
 
-
 if __name__ == '__main__':
     convert_list_to_person_class('test')
