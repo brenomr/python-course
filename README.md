@@ -96,6 +96,10 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Using classmethod and staticmethod
     [Class 004](./poo_classes/class004.py).
     [Class 005](./poo_classes/class005.py).
+- Class summary (revision)
+    [Class 006](./poo_classes/class006.py).
+- Class getter with @property
+    [Class 007](./poo_classes/class007.py).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
