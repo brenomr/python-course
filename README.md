@@ -98,7 +98,7 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 005](./poo_classes/class005.py).
 - Class summary (revision)
     [Class 006](./poo_classes/class006.py).
-- Class getter with @property
+- Class getter with @property and setter with @(attribute).setter
     [Class 007](./poo_classes/class007.py).
 
 ## Tracking Exercises - Basic Classes

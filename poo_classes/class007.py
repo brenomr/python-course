@@ -18,25 +18,28 @@ without break the code.
 class Pen:
 
     def __init__(self, color) -> None:
-        self.color_attribute_changed = color
 
-    # This one will need a setter property to use self.color (next class)    
-    # def set_color(self, color):
-    #     self.color = color
-    
-    def get_color(self):
-        return self.color
-    
+        # By convention attributes starting with one
+        # or two underlines are private / protected
+
+        # Setting att directly when creating an instance
+        self._color_att_changed = color
+
+        # Setting attributre by using the setter method
+        # self.color = color
+
     # With property the method acts like an attribute
     @property
     def color(self):
-        return self.color_attribute_changed
+        print(f'Color accessed directly by client: {self._color_att_changed}.')
+        return self._color_att_changed
+    
+    # color is the name of 'attribute' expose to client
+    @color.setter
+    def color(self, new_color):
+        print(f'Color changed directly by client to: {new_color}.')
+        self._color_att_changed = new_color
 
 pen1 = Pen('Blue')
-
-# The code won't break with the color attribute changed
-print(pen1.color)
-print(pen1.get_color())
-
-# This one will need a setter property (next class)
-# print(pen1.set_color('Black'))
+color = pen1.color
+pen1.color = 'Black'
