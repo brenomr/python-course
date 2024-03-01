@@ -100,6 +100,11 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 006](./poo_classes/class006.py).
 - Class getter with @property and setter with @(attribute).setter
     [Class 007](./poo_classes/class007.py).
+- Encapsulation
+    [Class 008](./poo_classes/class008.py).
+- Association
+    [Class 009](./poo_classes/class009.py).
+    [Class 009 Association Diagram](./poo_classes/misc/association.png).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
