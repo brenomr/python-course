@@ -28,12 +28,21 @@ class ShoppingCar:
     def total_price(self):
         self._total_price = sum([product.price for product in self._products])
         return self._total_price
+    
+    def insert_products(self, *products: list):
+        for product in products:
+            self._products.append(product)
+    
+    def list_products(self):
+        return self._products
 
 class Product:
     def __init__(self, name, price) -> None:
         self.name = name
         self.price = price
-
+    
+    def __str__(self) -> str:
+        return f'({self.name}, {self.price})'
 
 cart1 = ShoppingCar();
 
@@ -41,8 +50,10 @@ candy = Product('Candy', 10)
 chocolate = Product('Chocolate', 15)
 juicebox = Product('Juice Box', 18)
 
-cart1.product = candy
-cart1.product = chocolate
-cart1.product = juicebox
 
-print(cart1.total_price())
+cart1.product = candy
+cart1.insert_products(chocolate, juicebox)
+
+print(f'Total: {cart1.total_price():.2f}')
+products = cart1.list_products()
+print(*products, sep='\n')
