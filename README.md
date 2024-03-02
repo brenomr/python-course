@@ -107,6 +107,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 009 Association Diagram](./poo_classes/misc/association.png).
 - Agregation
     [Class 010](./poo_classes/class010.py).
+- Composition
+    [Class 011](./poo_classes/class011.py).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
