@@ -1,5 +1,6 @@
 """
-Association
+Association - Relation between two classes
+Its a weak relation, one object can exists without the other.
 """
 
 class Musician:
