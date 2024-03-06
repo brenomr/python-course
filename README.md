@@ -111,6 +111,10 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 011](./poo_classes/class011.py).
 - Class Inheritance and method sobreposition
     [Class 012](./poo_classes/class012.py).
+- Class Multiple Inheritance
+    [Class 013](./poo_classes/class013.py).
+- Class Abstract
+    [Class 014](./poo_classes/class014/log.py).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
