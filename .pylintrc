@@ -1,8 +1,11 @@
 [MAIN]
 
-exclude = [
-      tC0115, # missing-class-docstring
-]
+; disable = C0115, C0116, R0903
+disable =
+      missing-function-docstring,
+      missing-class-docstring,
+      too-few-public-methods,
+
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
