@@ -123,6 +123,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 015](./poo_classes/class015.py).
 - Creating Exceptions
     [Class 016](./poo_classes/class016.py).
+- What is 'dunder' or magic methods
+    [Class 017](./poo_classes/class017.py).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
