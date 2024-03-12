@@ -121,6 +121,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 014 - Abstract Properties](./poo_classes/class014/abstract_properties.py).
 - Class Polymorphism
     [Class 015](./poo_classes/class015.py).
+- Creating Exceptions
+    [Class 016](./poo_classes/class016.py).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
