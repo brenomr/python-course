@@ -125,6 +125,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 016](./poo_classes/class016.py).
 - What is 'dunder' or magic methods
     [Class 017](./poo_classes/class017.py).
+- Using classes with \_\_init\_\_ and \_\_new\_\_
+    [Class 018](./poo_classes/class018.py).
 
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
