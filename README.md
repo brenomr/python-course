@@ -129,6 +129,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 018](./poo_classes/class018.py).
 - Context Manager with classes
     [Class 019](./poo_classes/class019.py).
+- Context Manager with functions (generators)
+    [Class 020](./poo_classes/class020.py).
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
