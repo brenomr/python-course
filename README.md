@@ -135,6 +135,10 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 021](./poo_classes/class021.py).
 - Methods decorator 
     [Class 022](./poo_classes/class022.py).
+- Using \__call__
+    [Class 023](./poo_classes/class023.py).
+- Class decorator
+    [Class 024](./poo_classes/class024.py).
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
