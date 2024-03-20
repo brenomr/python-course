@@ -5,4 +5,5 @@
     "python.formatting.provider": "none",
     "explorer.compactFolders": false,
     "debug.terminal.clearBeforeReusing": true,
+    "editor.rulers": [80, 120]
     }
