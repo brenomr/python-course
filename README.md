@@ -143,6 +143,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 025](./poo_classes/class025.py).
 - Working with docstrings (detailed)
     [Class 026](./poo_classes/class026/)
+- Using enum
+    [Class 027](./poo_classes/class027/)
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
