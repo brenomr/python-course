@@ -164,6 +164,7 @@ In order to execute any of the files, just do it by using the interactive mode:
 ## Tracking Exercises - POO Classes
 - Exercise of [Saving and opening class data into JSON](./poo_classes/exercise001.py)
 - Exercise of [Make classes relation Car, Manufacturer and Engine](./poo_classes/exercise002.py)
+- Exercise of [Banking System](./poo_classes/exercise003.py)
 
 ## Extra
 Some tests out of the class:
