@@ -1,9 +1,16 @@
 {
     "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true,
     },
-    "python.formatting.provider": "none",
     "explorer.compactFolders": false,
     "debug.terminal.clearBeforeReusing": true,
-    "editor.rulers": [80, 120]
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "mypy-type-checker.severity": {
+        "error": "Error",
+        "note": "Information"
     }
+}
