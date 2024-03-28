@@ -14,17 +14,23 @@ More details: https://docs.python.org/3/library/dataclasses.html
 From Person from exercise 003, we can create a class with the same attributes
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict, astuple, field
 
 # with dataclass(init=False) we can create a class without __init__ method
 # allowing us to create the class with a custom __init__
+# there is other options like eq=False, repr=False, more details in the doc
 
 
 @dataclass
 class Person:
-    name: str
-    lastname: str
-    age: int
+    name: str = field(default='Unavailable')
+    lastname: str = field(default='Unavailable')
+    age: int = field(default=0)
+    # by default we can't use mutable objects like list, dict, set
+    # to start with an empty list, we can use field(default_factory=list)
+    # if we start with a empty list all instances will use the same list
+    # because of that dataclasses don't allow mutable objects
+    address: list[str] = field(default_factory=list)
 
     # with __post_init__ we can define custom attributes, example
     # def __post_init__(self):
@@ -55,3 +61,10 @@ if __name__ == '__main__':
     print(amelinda)
     print(fernando == amelinda)
     print(fernando == fernando2)
+
+    # Other usefull functions of dataclasses
+    # Show class as dict
+    print(asdict(fernando))
+
+    # Show class as tuple
+    print(astuple(fernando))
