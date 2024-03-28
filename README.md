@@ -145,6 +145,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 026](./poo_classes/class026/)
 - Using enum
     [Class 027](./poo_classes/class027/)
+- Using dataclass decorator
+    [Class 028](./poo_classes/class028.py)
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
