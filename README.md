@@ -149,6 +149,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 028](./poo_classes/class028.py)
 - Using namedtuples module
     [Class 029](./poo_classes/class029.py)
+- Creating our own list
+    [Class 030](./poo_classes/class030.py)
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
