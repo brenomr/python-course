@@ -153,6 +153,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 030](./poo_classes/class030.py)
 - Using datetime and timezone from pytz modules
     [Class 031](./module_classes/class031.py)
+- Comparing and formatting date
+    [Class 032](./module_classes/class032.py)
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
