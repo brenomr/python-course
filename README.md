@@ -176,6 +176,9 @@ In order to execute any of the files, just do it by using the interactive mode:
 - Exercise of [Make classes relation Car, Manufacturer and Engine](./poo_classes/exercise002.py)
 - Exercise of [Banking System](./poo_classes/exercise003.py)
 
+## Tracking Exercises - Module Classes
+- Exercise of [Resolving Problem](./module_classes/exercise001.py)
+
 ## Extra
 Some tests out of the class:
 - Sum of numbers in a string
