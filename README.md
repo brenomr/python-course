@@ -159,6 +159,8 @@ In order to execute any of the files, just do it by using the interactive mode:
     [Class 033](./module_classes/class033.py)
 - Using locale
     [Class 034](./module_classes/class034.py)
+- Using OS module - part 01
+    [Class 035](./module_classes/class035.py)
 ## Tracking Exercises - Basic Classes
 - Exercise of [Ordering Numbers](./basic_classes/exercise001.py)
 - [Multiple Exercises](./basic_classes/exercise002.py)
